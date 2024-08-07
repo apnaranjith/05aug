@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        num=prompt("enter your number:");
+        fibsum=0;
+        for(i of num){
+            a=0;b=1;
+            while(true){
+                if(i==a){
+                    fibsum=fibsum+Number(i);
+                    break;
+                }
+                else if(a>i){
+                    break;
+                }
+                c=a+b;
+                a=b;
+                b=c;
+            }
+        }
+        console.log(fibsum);
+    </Script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num=prompt("enter a number:");
+a=0,b=1,count=0,miss=" ",i=1;
+while(true){
+    c=a+b;
+    a=b;
+    b=c;
+    while(true)
+    {
+        if(c==i){
+            i++;
+            break;
+        }
+        if(c!=i){
+            count+=1;
+            miss=miss+i+" ";
+            i++;
+            if(c==i)
+            i++
+        }
+        if(c<i)
+        break;
+    }
+    if(count==num)
+    break;
+}
+console.log(miss);
+    </script>
+</body>
+</html>
